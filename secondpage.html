@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Geometria:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(to right, #FFECB3, #FFBBE8); /* Adjust the gradient colors as needed */
+    }
+
+    .container {
+      width: 50%;
+      position: relative;
+    }
+
+    .image-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .side-pic {
+      width: 550px; 
+      height: 550px; 
+    }
+
+    .long-pic {
+      width: 1050px; 
+      height: 1110px; 
+      margin-right: 800px; 
+    }
+
+    .text-box {
+      width: 1000px; 
+      height: 400px; 
+      background-color: #fe7070; 
+      position: absolute;
+      top: calc(50% - 200px); 
+      right: -250px; 
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .text-box h2 {
+      font-size: 30px; 
+      font-weight: normal; 
+      margin: 0 0 10px; 
+    }
+
+   .text-box h1 {
+  font-family: 'Geometria', sans-serif;
+  font-size: 70px;
+  font-weight: bold; 
+  margin: 20px 0 30px; 
+}
+
+
+    .text-box p {
+      font-size: 25px; 
+      margin: 0 0 90px; 
+      display: inline-block; 
+      vertical-align: middle;
+    }
+
+    .text-box img {
+      max-width: 100%;
+      height: auto;
+      margin-left: 10px; 
+      vertical-align: middle; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image-container">
+      <div>
+        <img src="pexels-rachel-claire-6752433.jpg" alt="Side Picture 1" class="side-pic">
+        <img src="pexels-eva-bronzini-6141651.jpg" alt="Side Picture 2" class="side-pic">
+      </div>
+      <img src="pexels-mister-mister-3434523.jpg" alt="Long Picture" class="long-pic">
+      <div class="text-box">
+        <h2 style="font-weight: normal;">LOREM IPSUM</h2>
+        <h1>LOREM IPSUM</h1>
+        <h1 style="font-size: 70px; font-weight: bold; margin: 0 0 30px; font-family: 'Geometria', sans-serif;">SET ADEMIR</h1>
+        <p>Click <img src="icons8-arrow-30.png" alt="Additional Image"></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

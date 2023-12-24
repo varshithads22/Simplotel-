@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Frontend</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #FFF5AF, #FFDACA);
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    nav {
+      background-color: #FF7171;
+      padding: 20px 40px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: 'Georgia', serif;
+      box-sizing: border-box;
+      padding: 15px;
+      margin: 0 10px;
+    }
+
+    .menu-icon img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 80px);
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .frame {
+      flex: 1;
+      padding: 20px;
+      text-align: left;
+      margin: 0;
+      background: linear-gradient(to right, #FFF5AF, #FFDACA);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    #frame1 {
+      background: linear-gradient(to right, #FFF5AF, #FFDACA);
+       width:100%;
+    }
+
+    #frame2 {
+      text-align: center;
+      margin: 0;
+    }
+
+    #frame2 img {
+      width: 110%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border: none;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      font-family: 'Westmount Bold', sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 6px;
+    }
+
+    p {
+      margin-top: 15px;
+      text-align: left;
+      font-family: 'TT Norms Pro Regular', sans-serif;
+    }
+
+    button {
+      display: block;
+      margin-top: 20px;
+      padding: 20px 40px;
+      background-color: #FF7171;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+      }
+
+      nav a, .menu-icon {
+        width: 100%;
+        margin: 5px 0;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      button {
+        padding: 15px 30px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div></div>
+    <a href="#">Home</a>
+    <a href="#">Order</a>
+    <a href="#">Food</a>
+    <a href="#">Restaurant</a>
+    <a href="#">Testimonials</a>
+    <a href="#">Contact Us</a>
+    <div class="menu-icon"><img src="menu-bar.png" alt="Menu Icon"></div>
+    <div></div>
+  </nav>
+
+  <main>
+    <div class="frame" id="frame1">
+      <h1>LOREM IPSUM</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+        id est vitae dolor rhoncus tristique. Maecenas metus quam,
+        rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+        dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+        Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+        Sed pulvinar, massa ac porta viverra.
+      </p>
+      <button>Click Me</button>
+    </div>
+
+    <div class="frame" id="frame2">
+      <img src="pexels-robin-stickel-70497.jpg" alt="Burger and Fries">
+    </div>
+  </main>
+
+</body>
+</html>
